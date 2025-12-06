@@ -11,4 +11,8 @@ import { BLOG_POSTS } from '../../../data/blog-posts.data';
 })
 export class RecentPostsSection {
    recentPosts: BlogPost[] = BLOG_POSTS;
+   ngOnInit() {
+    
+    this.recentPosts = BLOG_POSTS.slice(0, 2);
+   }
 }

@@ -10,10 +10,11 @@ import { Home } from "./pages/home/home";
 import { Blogspage } from "./pages/blogspage/blogspage";
 import { Workpage } from "./pages/workpage/workpage";
 import { Navbar } from "./navbar/navbar";
+import { Footer } from "./footer/footer";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CardWork, CardPost, Home, Blogspage, Workpage, Navbar],
+  imports: [RouterOutlet, CardWork, CardPost, Home, Blogspage, Workpage, Navbar, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
