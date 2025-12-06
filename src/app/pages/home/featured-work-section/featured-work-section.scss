@@ -1,0 +1,54 @@
+.featured-works-section {
+  padding: 40px 0; 
+  min-height: 300px; 
+  max-height: 700px;
+  overflow: hidden; 
+  width:100 wh;
+
+ 
+  background: #fff;
+  
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+}
+
+.container {
+  width: 100 wh;
+  margin: 0 auto;
+  padding: 0 24px;
+  
+  @media (max-width: 576px) {
+    padding: 0 16px;
+  }
+}
+.class-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width:100 wh;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #21243D;
+  margin-bottom: 40px;
+ margin-left: 250px;
+  
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+
+app-card-work {
+  display: block;
+  
+  .work-card {
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

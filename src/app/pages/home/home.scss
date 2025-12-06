@@ -1,0 +1,15 @@
+.home-container {
+  height: 100 vh;
+  width: 100 hh;
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  
+  
+  app-hero-section,
+  app-recent-posts,
+  app-featured-works {
+    display: block;
+  }
+}

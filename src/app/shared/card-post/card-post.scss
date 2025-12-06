@@ -1,8 +1,9 @@
 .blog-post-card {
+  height:50 px;
   background: #fff;
   border-radius: 8px;
   padding: 32px;
-  margin-bottom: 32px;
+  //margin-bottom: 32px;
   border: 1px solid #e0e0e0;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -21,10 +22,11 @@
 
 .text-container {
   .title {
+    height:30 px;
     font-size: 30px;
     font-weight: 700;
     color: #21243D;
-    margin: 0 0 20px 0;
+    margin: 0;
     line-height: 1.3;
     
     &:hover {
