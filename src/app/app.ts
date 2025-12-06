@@ -8,10 +8,11 @@ import { BLOG_POSTS } from './data/blog-posts.data';
 import { CardPost } from "./shared/card-post/card-post";
 import { Home } from "./pages/home/home";
 import { Blogspage } from "./pages/blogspage/blogspage";
+import { Workpage } from "./pages/workpage/workpage";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CardWork, CardPost, Home, Blogspage],
+  imports: [RouterOutlet, CardWork, CardPost, Home, Blogspage, Workpage],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

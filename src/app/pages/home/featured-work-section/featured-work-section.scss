@@ -27,6 +27,7 @@
   flex-direction: column;
   gap: 24px;
   width:100 wh;
+  justify-content: left;
 }
 
 .section-title {
@@ -34,7 +35,7 @@
   font-weight: 600;
   color: #21243D;
   margin-bottom: 40px;
- margin-left: 250px;
+ //margin-left: 250px;
   
   @media (max-width: 768px) {
     font-size: 20px;
@@ -42,7 +43,11 @@
   }
 }
 
-
+.work-container{
+    display: flex;
+    margin:2 px;
+    justify-content: left;
+}
 app-card-work {
   display: block;
   
