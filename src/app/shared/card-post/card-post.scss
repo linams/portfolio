@@ -1,0 +1,119 @@
+.blog-post-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 32px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    border-color: #007bff;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+.text-container {
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #21243D;
+    margin: 0 0 20px 0;
+    line-height: 1.3;
+    
+    &:hover {
+      color: #007bff;
+      cursor: pointer;
+    }
+  }
+}
+
+.meta-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  
+  .date {
+    font-size: 18px;
+    color: #21243D;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .separator {
+    color: #000;
+    font-weight: 700;
+  }
+  
+  .tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    
+    .tag {
+      color: #8695A4;
+      font-size: 20px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+}
+
+.description {
+  color: #21243D;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid #E0E0E0;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .blog-post-card {
+    padding: 24px 20px;
+    margin-bottom: 24px;
+  }
+  
+  .text-container {
+    .title {
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+  }
+  
+  .meta-info {
+    .date {
+      font-size: 16px;
+    }
+    
+    .tags .tag {
+      font-size: 16px;
+    }
+  }
+  
+  .description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .meta-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    
+    .separator {
+      display: none;
+    }
+  }
+}

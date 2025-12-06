@@ -1,0 +1,23 @@
+@for(post of post; track post.id) {
+<div class="blog-post-card">
+  <div class="text-container">
+    <h1 class="title">{{ post.title }}</h1>
+    
+    <div class="meta-info">
+      <p class="date">{{ post.date }}</p>
+      <span class="separator">|</span>
+      
+      <div class="tags">
+        @for(tag of post.tags; track tag; let last = $last) {
+          <span class="tag">{{ tag }}</span>
+          @if(!last) {<span>, </span>}
+        }
+      </div>
+    </div>
+    
+    <p class="description">
+      {{ post.description }}
+    </p>
+  </div>
+</div>
+}

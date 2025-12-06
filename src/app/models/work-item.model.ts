@@ -1,18 +1,8 @@
-export interface WorkItem {
-  id: string;
+export interface WorkItem{
+  id: number;
+  image_src: string;
   title: string;
-  year: string;
-  category: string;
-  tags: string[];
   description: string;
-  thumbnail: string;
-  images?: string[];
-  sections?: WorkSection[];
-}
-
-export interface WorkSection {
-  heading?: string;
-  subheading?: string;
-  content: string;
-  image?: string;
+  date: number;
+  detail_text: string;
 }
