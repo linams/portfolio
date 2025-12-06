@@ -7,10 +7,11 @@ import { BlogPost } from './models/blog-post.model';
 import { BLOG_POSTS } from './data/blog-posts.data';
 import { CardPost } from "./shared/card-post/card-post";
 import { Home } from "./pages/home/home";
+import { Blogspage } from "./pages/blogspage/blogspage";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CardWork, CardPost, Home],
+  imports: [RouterOutlet, CardWork, CardPost, Home, Blogspage],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
