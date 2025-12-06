@@ -9,10 +9,11 @@ import { CardPost } from "./shared/card-post/card-post";
 import { Home } from "./pages/home/home";
 import { Blogspage } from "./pages/blogspage/blogspage";
 import { Workpage } from "./pages/workpage/workpage";
+import { Navbar } from "./navbar/navbar";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CardWork, CardPost, Home, Blogspage, Workpage],
+  imports: [RouterOutlet, CardWork, CardPost, Home, Blogspage, Workpage, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
