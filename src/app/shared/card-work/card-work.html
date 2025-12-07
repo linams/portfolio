@@ -1,5 +1,5 @@
 @for(item of data; track item.id){
-<div class="main">
+<div class="main" (click)="viewDetails(item.id)">
   <div class="img-container">
     <img [src]="item.image_src" alt="" />
   </div>
