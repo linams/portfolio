@@ -1,0 +1,40 @@
+<section class="work-details-section" *ngIf="workItem">
+  <div class="container">
+    <h1 class="page-title">Work Detail</h1>
+    
+    <div class="work-details-content">
+      <h2 class="project-title">{{ workItem.title }}</h2>
+      
+      <div class="project-meta">
+        <span class="year-badge">{{ workItem.date }}</span>
+        <span class="category-tags">{{ workItem.detail_text }}</span>
+      </div>
+      
+      <p class="project-description">
+        {{ workItem.description }}
+      </p>
+      
+      <div class="project-images">
+        <img [src]="workItem.image_src" [alt]="workItem.title" class="project-image" />
+        
+       
+        <ng-container *ngIf="workItem.detailImages">
+          <img 
+            *ngFor="let image of workItem.detailImages; let i = index" 
+            [src]="image" 
+            [alt]="workItem.title + ' - Image ' + (i + 2)" 
+            class="project-image" 
+          />
+        </ng-container>
+      </div>
+      
+      <div class="project-content">
+        <h3 class="content-heading">Heading 1</h3>
+        <h4 class="content-subheading">Heading 2</h4>
+        <p class="content-text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

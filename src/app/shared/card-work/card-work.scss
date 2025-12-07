@@ -6,6 +6,12 @@
   
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--light);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  
+  &:hover {
+    opacity: 0.8;
+  }
   
   width:1152 px;
   .title {

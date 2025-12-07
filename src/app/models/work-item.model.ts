@@ -5,4 +5,5 @@ export interface WorkItem{
   description: string;
   date: number;
   detail_text: string;
+  detailImages?: string[]; 
 }

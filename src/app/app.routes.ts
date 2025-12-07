@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { Home } from './pages/home/home';
 import { Blogspage } from './pages/blogspage/blogspage';
 import { Workpage } from './pages/workpage/workpage';
+import { WorkDetails } from './work-details/work-details';
 
 
 export const routes: Routes = [{
@@ -16,6 +17,10 @@ export const routes: Routes = [{
   { 
     path: 'works', 
     component:Workpage
+  },
+  { 
+    path: 'work-details/:id', 
+    component: WorkDetails
   },
   { 
     path: '**', 

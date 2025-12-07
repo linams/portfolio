@@ -1,9 +1,11 @@
 import { Component,Input } from '@angular/core';
 import { WorkItem } from '../../models/work-item.model';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-card-work',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './card-work.html',
   styleUrl: './card-work.scss',
 })
